@@ -15,11 +15,16 @@ public class LoginPage {
 
     WebDriver driver;
     private static String url = "";
+    private String myLoginOrEmail = System.getenv("$ALLEGRO_LOGIN");
+    private String myPasswd = System.getenv("$ALLEGRO_PASSWD");
+
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
+
+
 
     @FindBy(css = "#username[placeholder='Login lub e-mail']")
     private WebElement loginOrEmailInputForm;
@@ -40,5 +45,13 @@ public class LoginPage {
 
     public void loginButtonClick() {
         loginButton.click();
+    }
+
+    public void loginOrEmailFormEnterLogin(){
+        loginOrEmailInputForm.sendKeys(myLoginOrEmail);
+    }
+
+    public void passwordFormEnterPassword(){
+        passwordInputForm.sendKeys(myPasswd);
     }
 }
