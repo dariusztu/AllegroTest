@@ -34,13 +34,18 @@ public class LoginPageTests {
     }
 
     @Test
-    public void firstSampleTest() {
+    public void loginTest() {
         landingPageObject = new LandingPage(driver);
         loginPageObject = new LoginPage(driver);
         landingPageObject.getPage();
         landingPageObject.rodoButtonAcceptClick();
         landingPageObject.mojeAllegroButtonClicK();
         landingPageObject.mojeAllegroToLoginButtonClick();
+        loginPageObject.loginOrEmailInputFormClick();
+        loginPageObject.loginOrEmailFormEnterLogin();
+        loginPageObject.passwordInputFormClick();
+        loginPageObject.passwordFormEnterPassword();
+        loginPageObject.loginButtonClick();
 
     }
 }
