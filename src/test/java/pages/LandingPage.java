@@ -11,27 +11,13 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LandingPage {
 
-    private LandingPage landingPageObject;
-    private WebDriver driver;
+    WebDriver driver;
 
-    @BeforeClass
-    public static void pathSetup() {
-        WebDriverManager.chromedriver().setup();
+    public LandingPage(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
 
-    @Before
-    public void setupDriver() {
-        driver = new ChromeDriver();
-    }
-
-    @After
-    public void tearDown() {
-        driver.quit();
-    }
-
-    @Test
-    public void firstSampleTest() {
-        
-    }
+    
 
 }
