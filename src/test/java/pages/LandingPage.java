@@ -16,17 +16,26 @@ public class LandingPage {
     WebDriver driver;
     private static String url = "https://allegro.pl/";
 
-    @FindBy(css="[data-role=accept-consent][data-analytics-interaction-value=accept]")
+    @FindBy(css = "[data-role=accept-consent][data-analytics-interaction-value=accept]")
     private WebElement rodoButtonAccept;
 
-    @FindBy(css="[data-role=reject-consent][data-analytics-interaction-value=reject]")
+    @FindBy(css = "[data-role=reject-consent][data-analytics-interaction-value=reject]")
     private WebElement rodoButtonDeny;
+
+    @FindBy(css = "[data-description='header account name']")
+    private WebElement mojeAllegroButton;
+
+    @FindBy(css = "[data-description='header login button']")
+    private WebElement mojeAllegroToLoginButton;
+
+    @FindBy(css = "[data-description='header logout button']")
+    private WebElement mojeAllegroToLogoutButton;
+
 
     public LandingPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-
 
 
     public String getPage() {
@@ -42,6 +51,16 @@ public class LandingPage {
         rodoButtonDeny.click();
     }
 
+    public void mojeAllegroButtonClicK() {
+        mojeAllegroButton.click();
+    }
 
+    public void mojeAllegroToLoginButtonClick() {
+        mojeAllegroToLoginButton.click();
+    }
+
+    public void mojeAllegroToLogoutButtonClick() {
+        mojeAllegroToLogoutButton.click();
+    }
 
 }
