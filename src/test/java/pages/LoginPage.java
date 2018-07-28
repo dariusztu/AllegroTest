@@ -15,8 +15,8 @@ public class LoginPage {
 
     WebDriver driver;
     private static String url = "";
-    private String myLoginOrEmail = System.getenv("$ALLEGRO_LOGIN");
-    private String myPasswd = System.getenv("$ALLEGRO_PASSWD");
+    private String myLoginOrEmail = System.getenv("ALLEGRO_LOGIN");
+    private String myPasswd = System.getenv("ALLEGRO_PASSWD");
 
 
     public LoginPage(WebDriver driver) {
