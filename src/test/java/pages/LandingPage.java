@@ -16,6 +16,11 @@ public class LandingPage {
     WebDriver driver;
     private static String url = "https://allegro.pl/";
 
+    public LandingPage(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+    }
+
     @FindBy(css = "[data-role=accept-consent][data-analytics-interaction-value=accept]")
     private WebElement rodoButtonAccept;
 
@@ -32,10 +37,7 @@ public class LandingPage {
     private WebElement mojeAllegroToLogoutButton;
 
 
-    public LandingPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
-    }
+
 
 
     public String getPage() {
