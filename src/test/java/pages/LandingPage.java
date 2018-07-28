@@ -12,12 +12,20 @@ import org.openqa.selenium.support.PageFactory;
 public class LandingPage {
 
     WebDriver driver;
+    private static String url = "https://allegro.pl/";
 
     public LandingPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-    
+
+
+    public String getPage() {
+        driver.get(url);
+        return url;
+    }
+
+
 
 }
