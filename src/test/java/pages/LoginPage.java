@@ -11,6 +11,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.Map;
+
 public class LoginPage {
 
     WebDriver driver;
@@ -23,7 +25,6 @@ public class LoginPage {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-
 
 
     @FindBy(css = "#username[placeholder='Login lub e-mail']")
@@ -47,11 +48,43 @@ public class LoginPage {
         loginButton.click();
     }
 
-    public void loginOrEmailFormEnterLogin(){
-        loginOrEmailInputForm.sendKeys(myLoginOrEmail);
+
+    public String checkEnv(String env1) {
+
+            try {
+                String env = System.getenv(env1);
+
+                if (env == null) {
+
+                    throw new AssertionError("Environmental variable not set properly, please check.");
+                }
+                    return env;
+
+            } catch (SecurityException e) {
+                throw new AssertionError("Security policy doesn't allow access to system environment", e);
+            }
+
+
+
     }
 
-    public void passwordFormEnterPassword(){
-        passwordInputForm.sendKeys(myPasswd);
+    public void loginOrEmailFormEnterLogin() {
+
+        String checkLogin = checkEnv(myLoginOrEmail);
+        if (!(checkLogin.isEmpty())) {
+            loginOrEmailInputForm.sendKeys(myLoginOrEmail);
+        } else {
+            System.out.println("Login variable incorrect, please check environmental variable");
+        }
+    }
+
+    public void passwordFormEnterPassword() {
+
+        String checkPasswd = checkEnv(myPasswd);
+        if (!(checkPasswd.isEmpty())) {
+            passwordInputForm.sendKeys(myPasswd);
+        } else {
+            System.out.println("Password variable incorrect, please check environmental variable");
+        }
     }
 }
