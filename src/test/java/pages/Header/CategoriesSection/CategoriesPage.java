@@ -16,4 +16,12 @@ public class CategoriesPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
+    @FindBy(css = "a[href=\"/dzial/supermarket#to-category-map\"]")
+    private WebElement wszystkiekategorie;
+
+    public CategoriesPage wszystkiekategorieClick() {
+        wszystkiekategorie.click();
+        return this;
+    }
+
 }
