@@ -70,7 +70,7 @@ public class DropdownPage extends BasePage {
     @FindBy(css = "._8ntnf > div > div:nth-child(19) > div > div > div > div > div > p > a:nth-child(2) > img")
     private WebElement mojeAllegroDropdownSmartGraphics;
 
-    
+
 
 
 
