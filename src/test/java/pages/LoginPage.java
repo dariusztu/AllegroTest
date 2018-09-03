@@ -13,7 +13,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.Map;
 
-public class LoginPage {
+public class LoginPage extends BasePage{
 
     WebDriver driver;
     private static String url = "";
