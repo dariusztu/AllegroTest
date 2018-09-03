@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import pages.LandingPage;
 import static org.assertj.core.api.Assertions.*;
 
-public class LandingPageTests extends BaseTest {
+public class LandingPageTest extends BaseTest {
 
     private LandingPage landingPageObject;
 
