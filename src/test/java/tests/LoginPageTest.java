@@ -34,7 +34,7 @@ public class LoginPageTest {
     }
 
     @Test
-    public void loginTest() {
+    public void passIfLoginSuccessfull() {
         landingPageObject = new LandingPage(driver);
         loginPageObject = new LoginPage(driver);
         landingPageObject.getPage();
