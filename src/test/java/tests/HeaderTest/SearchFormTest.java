@@ -17,11 +17,27 @@ public class SearchFormTest extends BaseTest {
     public void passIfFindSuccessfull() {
         landingPageObject = new LandingPage(driver);
         searchPageObject = new SearchPage(driver);
-        landingPageObject.goTopage();
-        landingPageObject.rodoButtonAcceptClick();
+        landingPageObject.
+                goTopage().
+                rodoButtonAcceptClick();
         searchPageObject.
                 searchFormSendKeys("iPhone").
                 searchButtonClick();
         assertThat(driver.getPageSource()).contains("iPhone");
+    }
+
+    @Test
+    public void passIfChosenCategoryIsDisplayingCorrectly() { //TODO PARAMETRIZED TEST
+        landingPageObject = new LandingPage(driver);
+        searchPageObject = new SearchPage(driver);
+        landingPageObject.
+                goTopage().
+                rodoButtonAcceptClick();
+        assertThat(
+        searchPageObject.
+                dropdownCategorySearchClick().
+                dropdownCategorySearchDomiOgrodClick().
+                dropdownCategorySearchReturnActiveValue()).
+                contains("Dom i ogród");
     }
 }
