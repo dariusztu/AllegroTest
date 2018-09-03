@@ -13,8 +13,8 @@ import static org.assertj.core.api.Assertions.*;
 
 public class BaseTest {
 
-    private BasePage basepage
-    private WebDriver driver;
+    private BasePage basepage;
+    public WebDriver driver;
 
     @BeforeClass
     public static void pathSetup() {
