@@ -31,10 +31,10 @@ public class SearchPage extends BasePage {
     private WebElement dropdownCategorySearchRolledDownList;
 
     @FindBy(css = ".opbox-metrum-header__search-slot > div > div > form > div > div > div:nth-child(1)")
-    private WebElement dropdownCategorySearchJak;
+    private WebElement dropdownCategorySearchJak; // No redirect URL
 
     @FindBy(css = ".metrum-search__option.metrum-search__option--how")
-    private WebElement dropdownCategorySearchWopisachOfertCheckbox; // No redirect URL
+    private WebElement dropdownCategorySearchWopisachOfertCheckbox;
 
 
 
@@ -111,6 +111,8 @@ public class SearchPage extends BasePage {
         dropdownCategorySearch.click();
         return this;
     }
+
+    public SearchPage dropdown
 
 
 
