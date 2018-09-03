@@ -211,8 +211,8 @@ import pages.BasePage;
 
         public SubCategory1Page elektronikaPodkategoriaPralkiClick() {
              elektronikaPodkategoriaPralki.click();
-            return this.click();
+            return this;
         }
     }
-    }
+
 
