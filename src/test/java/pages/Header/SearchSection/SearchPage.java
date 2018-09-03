@@ -112,6 +112,11 @@ public class SearchPage extends BasePage {
         return this;
     }
 
+    public String dropdownCategorySearchReturnActiveValue() {
+        String dropdownActiveText = dropdownCategorySearch.getText();
+        return dropdownActiveText;
+    }
+
     public SearchPage dropdownCategorySearchJakClick(){
         dropdownCategorySearchJak.click();
         return this;
