@@ -46,6 +46,11 @@ public class LandingPage    extends BasePage {
         return url;
     }
 
+    public LandingPage goTopage() {
+        driver.get(url);
+        return this;
+    }
+
     public void rodoButtonAcceptClick() {
         rodoButtonAccept.click();
     }
