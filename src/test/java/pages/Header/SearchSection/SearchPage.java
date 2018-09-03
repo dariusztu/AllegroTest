@@ -112,8 +112,100 @@ public class SearchPage extends BasePage {
         return this;
     }
 
-    public SearchPage dropdown
+    public SearchPage dropdownCategorySearchJakClick(){
+        dropdownCategorySearchJak.click();
+        return this;
+    }
 
+    public SearchPage dropdownCategorySearchGdzieClick(){
+        dropdownCategorySearchGdzie.click();
+        return this;
+    }
+
+    public SearchPage dropdownCategorySearchWopisachOfertCheckboxClick(){
+        dropdownCategorySearchWopisachOfertCheckbox.click();
+        return this;
+    }
+
+    public SearchPage dropdownCategorySearchWszystkieDzialyClick(){
+        dropdownCategorySearchWszystkieDzialy.click();
+        return this;
+    }
+
+    public SearchPage dropdownCategorySearchDomiOgrodClick(){
+        dropdownCategorySearchDomiOgrod.click();
+        return this;
+    }
+
+    public SearchPage dropdownCategorySearchDzieckoClick(){
+        dropdownCategorySearchDziecko.click();
+        return this;
+    }
+
+    public SearchPage dropdownCategorySearchElektronikaClick(){
+        dropdownCategorySearchElektronika.click();
+        return this;
+    }
+
+    public SearchPage dropdownCategorySearchFirmaClick(){
+        dropdownCategorySearchFirma.click();
+        return this;
+    }
+
+    public SearchPage dropdownCategorySearchKolekcjeiSztukaClick(){
+        dropdownCategorySearchKolekcjeiSztuka.click();
+        return this;
+    }
+
+    public SearchPage dropdownCategorySearchKulturaiRozrywkaClick(){
+        dropdownCategorySearchKulturaiRozrywka.click();
+        return this;
+    }
+
+    public SearchPage dropdownCategorySearchModaClick(){
+        dropdownCategorySearchModa.click();
+        return this;
+    }
+
+    public SearchPage dropdownCategorySearchMotoryzacjaClick(){
+        dropdownCategorySearchMotoryzacja.click();
+        return this;
+    }
+
+    public SearchPage dropdownCategorySearchOgloszeniaiUslugiClick(){
+        dropdownCategorySearchOgloszeniaiUslugi.click();
+        return this;
+    }
+
+    public SearchPage dropdownCategorySearchSportiTurystykaClick(){
+        dropdownCategorySearchSportiTurystyka.click();
+        return this;
+    }
+
+    public SearchPage dropdownCategorySearchSuperMarketClick(){
+        dropdownCategorySearchSuperMarket.click();
+        return this;
+    }
+
+    public SearchPage dropdownCategorySearchUrodaClick(){
+        dropdownCategorySearchUroda.click();
+        return this;
+    }
+
+    public SearchPage dropdownCategorySearchZdrowieClick(){
+        dropdownCategorySearchZdrowie.click();
+        return this;
+    }
+
+    public SearchPage dropdownCategorySearchUzytkownicyClick(){
+        dropdownCategorySearchUzytkownicy.click();
+        return this;
+    }
+
+    public SearchPage dropdownCategorySearchZakonczoneClick(){
+        dropdownCategorySearchZakonczone.click();
+        return this;
+    }
 
 
 
