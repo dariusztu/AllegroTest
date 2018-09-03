@@ -5,15 +5,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import pages.BasePage;
+import pages.Header.CategoriesSection.CategoriesPage;
 import pages.Header.DropdownSection.DropdownPage;
 import pages.Header.SearchSection.SearchPage;
-import sun.jvm.hotspot.memory.HeapBlock;
 
 public class HeaderPage extends BasePage {
-
     WebDriver driver;
+
     public DropdownPage dropdownPage;
     public SearchPage searchPage;
+    public CategoriesPage categoriesPage;
 
     public HeaderPage(WebDriver driver) {
         super(driver);
@@ -21,6 +22,7 @@ public class HeaderPage extends BasePage {
         PageFactory.initElements(driver, this);
         dropdownPage = new DropdownPage(driver);
         searchPage = new SearchPage(driver);
+        categoriesPage = new CategoriesPage(driver);
     }
 
     @FindBy(css = ".fee54_1Uwxm.fee54_3KwDM > a")
