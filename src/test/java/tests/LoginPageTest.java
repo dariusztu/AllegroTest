@@ -12,7 +12,7 @@ import pages.LoginPage;
 
 import static org.assertj.core.api.Assertions.*;
 
-public class LoginPageTests {
+public class LoginPageTest {
 
     private LandingPage landingPageObject;
     private LoginPage loginPageObject;
