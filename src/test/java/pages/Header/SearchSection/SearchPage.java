@@ -95,6 +95,13 @@ public class SearchPage extends BasePage {
         return this;
     }
 
+    public SearchPage searchFormSendKeys(String keys) {
+        searchForm.sendKeys(keys);
+        return this;
+    }
+
+
+
     public SearchPage searchButtonClick() {
         searchButton.click();
         return this;
@@ -105,8 +112,7 @@ public class SearchPage extends BasePage {
         return this;
     }
 
-    public SearchPage dropdownCategorySearchSelect() {
-        dropdownCategorySearchRolledDownList.
-    }
+
+
 
 }
