@@ -71,4 +71,9 @@ public class LandingPage    extends BasePage {
         mojeAllegroToLogoutButton.click();
     }
 
+    public boolean checkIfVisible() {
+        boolean isVisible = rodoButtonAccept.isDisplayed();
+        return isVisible;
+    }
+
 }
