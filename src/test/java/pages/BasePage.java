@@ -1,14 +1,7 @@
 package pages;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class BasePage {
@@ -19,5 +12,21 @@ public class BasePage {
     public BasePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
+    }
+
+    public BasePage click(WebElement element) {
+        element.click();
+        return this;
+    }
+
+    public String getTextToString(WebElement element) {
+        String elementText = element.getText();
+        return elementText;
+
+    }
+
+    public BasePage sendKeysFromString(WebElement element, String keys) {
+        element.sendKeys(keys);
+        return this;
     }
 }
