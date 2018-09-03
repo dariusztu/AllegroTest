@@ -10,25 +10,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import pages.LandingPage;
 import static org.assertj.core.api.Assertions.*;
 
-public class LandingPageTests {
+public class LandingPageTests extends BaseTest {
 
     private LandingPage landingPageObject;
-    private WebDriver driver;
-
-    @BeforeClass
-    public static void pathSetup() {
-        WebDriverManager.chromedriver().setup();
-    }
-
-    @Before
-    public void setupDriver() {
-        driver = new ChromeDriver();
-    }
-
-    @After
-    public void tearDown() {
-        driver.quit();
-    }
 
     @Test
     public void firstSampleTest() {
