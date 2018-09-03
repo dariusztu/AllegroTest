@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import pages.BasePage;
 import pages.Header.DropdownSection.DropdownPage;
 import pages.Header.SearchSection.SearchPage;
+import sun.jvm.hotspot.memory.HeapBlock;
 
 public class HeaderPage extends BasePage {
 
@@ -27,4 +28,15 @@ public class HeaderPage extends BasePage {
 
     @FindBy(css = ".fee54_1Njt4 > div:nth-child(2) > div > div > a")
     private WebElement koszyk;
+
+    public HeaderPage starButtonObserwowaneOfetyClick() {
+        starButtonObserwowaneOfety.click();
+        return this;
+    }
+
+    public HeaderPage koszykClick() {
+        koszyk.click();
+        return this;
+    }
+
 }
