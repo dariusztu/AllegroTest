@@ -24,7 +24,7 @@ public class CategoriesPage extends BasePage {
     @FindBy(css = "a[href=\"/mapa-strony/kategorie\"]")
     private WebElement kategorieMainButton;
 
-    @FindBy(css = "a[href=\"/dzial/supermarket#to-category-map\"]")
+    @FindBy(css = "a[href=\"/dzial/elektronika#to-category-map\"]")
     private WebElement wszystkiekategorie;
 
     @FindBy(css = "._882d6_1Ba5t > div > [href=\"/dzial/elektronika\"]")
@@ -75,7 +75,7 @@ public class CategoriesPage extends BasePage {
     }
 
     public CategoriesPage kategorieMainButtonClick() {
-        kategorieMainButton.;
+        kategorieMainButton.click();
         return this;
     }
 
