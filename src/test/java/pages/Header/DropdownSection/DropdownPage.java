@@ -70,9 +70,95 @@ public class DropdownPage extends BasePage {
     @FindBy(css = "._8ntnf > div > div:nth-child(19) > div > div > div > div > div > p > a:nth-child(2) > img")
     private WebElement mojeAllegroDropdownSmartGraphics;
 
+    public DropdownPage mojeAllegroDropdownClick() {
+        mojeAllegroDropdown.click();
+        return this;
+    }
 
+    public DropdownPage mojeAllegroDropdownWystawPrzedmiotClick() {
+        mojeAllegroDropdownWystawPrzedmiot.click();
+        return this;
+    }
 
+    public DropdownPage mojeAllegroDropdownObserwowaneClick() {
+        mojeAllegroDropdownObserwowane.click();
+        return this;
+    }
 
+    public DropdownPage mojeAllegroDropdownLicytujeszClick() {
+        mojeAllegroDropdownLicytujesz.click();
+        return this;
+    }
+
+    public DropdownPage mojeAllegroDropdownKupioneClick() {
+        mojeAllegroDropdownKupione.click();
+        return this;
+    }
+
+    public DropdownPage mojeAllegroDropdownOcenSprzedawceClick() {
+        mojeAllegroDropdownOcenSprzedawce.click();
+        return this;
+    }
+
+    public DropdownPage mojeAllegroDropdownOcenProduktyClick() {
+        mojeAllegroDropdownOcenProdukty.click();
+        return this;
+    }
+
+    public DropdownPage mojeAllegroDropdownMonetyiKuponyClick() {
+        mojeAllegroDropdownMonetyiKupony.click();
+        return this;
+    }
+
+    public DropdownPage mojeAllegroDropdownMojeOfertyClick() {
+        mojeAllegroDropdownMojeOferty.click();
+        return this;
+    }
+
+    public DropdownPage mojeAllegroDropdownSprzedajeszClick() {
+        mojeAllegroDropdownSprzedajesz.click();
+        return this;
+    }
+
+    public DropdownPage mojeAllegroDropdownSprzedaneClick() {
+        mojeAllegroDropdownSprzedane.click();
+        return this;
+    }
+
+    public DropdownPage mojeAllegroDropdownMojeOcenyClick() {
+        mojeAllegroDropdownMojeOceny.click();
+        return this;
+    }
+
+    public DropdownPage mojeAllegroDropdownCentrumZnizekClick() {
+        mojeAllegroDropdownCentrumZnizek.click();
+        return this;
+    }
+
+    public DropdownPage mojeAllegroDropdownMojeKontoClick() {
+        mojeAllegroDropdownMojeKonto.click();
+        return this;
+    }
+
+    public DropdownPage mojeAllegroDropdownZalogujButtonClick() {
+        mojeAllegroDropdownZalogujButton.click();
+        return this;
+    }
+
+    public DropdownPage mojeAllegroDropdownZalozKontoButtonClick() {
+        mojeAllegroDropdownZalozKontoButton.click();
+        return this;
+    }
+
+    public DropdownPage mojeAllegroDropdownKupTerazGraphicsClick() {
+        mojeAllegroDropdownKupTerazGraphics.click();
+        return this;
+    }
+
+    public DropdownPage mojeAllegroDropdownSmartGraphicsClick() {
+        mojeAllegroDropdownSmartGraphics.click();
+        return this;
+    }
 
 
 }
