@@ -15,10 +15,22 @@ public class LandingPageTest extends BaseTest {
     private LandingPage landingPageObject;
 
     @Test
-    public void firstSampleTest() {
+    public void passIfCurrentUrlIsAsGiven() {
         landingPageObject = new LandingPage(driver);
         String url = landingPageObject.getPage();
         assertThat(url).isEqualTo(driver.getCurrentUrl());
 
     }
+
+    @Test
+    public void passIfRODOAcceptGoToNextPage() {
+        landingPageObject = new LandingPage(driver);
+        landingPageObject.
+                goTopage().
+                rodoButtonAcceptClick();
+        assertThat(landingPageObject.checkIfVisible()).isFalse();
+    }
+
+
+
 }
