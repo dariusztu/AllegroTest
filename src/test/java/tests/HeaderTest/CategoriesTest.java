@@ -6,6 +6,8 @@ import pages.Header.SearchSection.SearchPage;
 import pages.LandingPage;
 import tests.BaseTest;
 
+import java.util.concurrent.TimeUnit;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class CategoriesTest extends BaseTest {
@@ -23,9 +25,16 @@ public class CategoriesTest extends BaseTest {
 
         headerPage.categoriesPage.
                 kategorieMainButtonClick().
-                wszystkiekategorieClick().
                 mouseHoverOverCategory(headerPage.categoriesPage.getKategoriaModa());
-        
+        assertThat(headerPage.
+                categoriesPage.
+                subCategory2Page.
+                getModaPodkategoriaOdziezObuwieDodatki().
+                isDisplayed())
+                .isTrue();
+
+
+
 
     }
 
