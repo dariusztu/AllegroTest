@@ -14,8 +14,8 @@ import javax.swing.*;
 public class CategoriesPage extends BasePage {
 
     WebDriver driver;
-    SubCategory1Page subCategory1Page;
-    SubCategory2Page subCategory2Page;
+    public SubCategory1Page subCategory1Page;
+    public SubCategory2Page subCategory2Page;
 
     public CategoriesPage(WebDriver driver) {
         super(driver);
@@ -140,7 +140,7 @@ public class CategoriesPage extends BasePage {
     public CategoriesPage mouseHoverOverCategory(WebElement element) {
 
         Actions action = new Actions(driver);
-        action.moveToElement(element).perform();
+        action.moveToElement(element).build().perform();
         return this;
     }
 
