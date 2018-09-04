@@ -14,7 +14,7 @@ public class CategoriesTest extends BaseTest {
     private HeaderPage headerPage;
 
     @Test
-    public void passIfGoToWystawPrzedmiotIsSuccessfull(){
+    public void passIfShowCategoryAfterMouseHoverIsSuccessfull(){
         landingPageObject = new LandingPage(driver);
         headerPage = new HeaderPage(driver);
         landingPageObject.
@@ -23,7 +23,10 @@ public class CategoriesTest extends BaseTest {
 
         headerPage.categoriesPage.
                 kategorieMainButtonClick().
-                wszystkiekategorieClick();
+                wszystkiekategorieClick().
+                mouseHoverOverCategory(headerPage.categoriesPage.getKategoriaModa());
+        
+
     }
 
 }
