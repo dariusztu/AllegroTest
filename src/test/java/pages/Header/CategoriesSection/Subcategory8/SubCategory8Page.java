@@ -18,9 +18,8 @@ public class SubCategory8Page extends BasePage {
 
     // Kultura i rozrywka subcategory
 
-    
 
-    @FindBy(css = "Bilety\"]")
+    @FindBy(css = "a[title=\"Bilety\"]")
     private WebElement kulturaiRozrywkaPodkategoriaBilety;
 
     public WebElement getkulturaiRozrywkaPodkategoriaBilety() {
