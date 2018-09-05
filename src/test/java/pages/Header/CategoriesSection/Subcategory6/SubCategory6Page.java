@@ -18,9 +18,9 @@ public class SubCategory6Page extends BasePage {
 
     // Uroda subcategory
 
-    
 
-    @FindBy(css = "a[title=\"Odzież, Obuwie, Dodatki\"]")
+
+    @FindBy(css = "a[title=\"Pielęgnacja\"]")
     private WebElement urodaPodkategoriaPielegnacja;
 
     public WebElement geturodaPodkategoriaPielegnacja() {
