@@ -22,6 +22,8 @@ import pages.Header.CategoriesSection.Subcategory13.SubCategory13Page;
 
 
 import javax.swing.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CategoriesPage extends BasePage {
 
@@ -103,6 +105,32 @@ public class CategoriesPage extends BasePage {
     @FindBy(css = "._882d6_1Ba5t > div > [href=\"/dzial/kolekcje-i-sztuka\"]")
     private WebElement kategoriaKolekcjeiSztuka;
 
+
+    // WebElements list
+    List<WebElement> allWebElements = new ArrayList<WebElement>();
+
+    public List<WebElement> CategoriesPageList() {
+        allWebElements.add(kategoriaZdrowie);
+        allWebElements.add(kategoriaOgloszeniaiUslugi);
+        allWebElements.add(kategoriadomiOgrod);
+        allWebElements.add(kategoriaDziecko);
+        allWebElements.add(kategoriaElektronika);
+        allWebElements.add(kategoriaFirma);
+        allWebElements.add(kategoriaKolekcjeiSztuka);
+        allWebElements.add(kategoriaKulturaiRozrywka);
+        allWebElements.add(kategoriaModa);
+        allWebElements.add(kategoriaMotoryzacja);
+        allWebElements.add(kategoriaSportiTurystyka);
+        allWebElements.add(kategoriaUroda);
+        allWebElements.add(kategoriaSupermarket);
+
+
+
+
+        return allWebElements;
+
+    }
+
     public WebElement getKategoriaElektronika() {
         return kategoriaElektronika;
     }
@@ -158,6 +186,9 @@ public class CategoriesPage extends BasePage {
     @FindBy(css = "._882d6_1Ba5t > div > [href=\"/dzial/firma\"]")
     private WebElement kategoriaFirma;
 
+    public void categoryClick(WebElement element) {
+        element.click();
+    }
 
     public CategoriesPage wszystkiekategorieClick() {
         wszystkiekategorie.click();
