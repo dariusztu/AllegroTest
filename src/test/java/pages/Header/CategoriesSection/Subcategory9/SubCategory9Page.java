@@ -18,9 +18,8 @@ public class SubCategory9Page extends BasePage {
 
     // Sport i turystyka subcategory
 
-    
 
-    @FindBy(css = "Wakacje\"]")
+    @FindBy(css = "a[title=\"Wakacje\"]")
     private WebElement sportiTurystykaPodkategoriaWakacje;
 
     public WebElement getsportiTurystykaPodkategoriaWakacje() {
