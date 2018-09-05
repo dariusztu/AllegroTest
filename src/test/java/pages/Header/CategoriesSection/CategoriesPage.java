@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import pages.BasePage;
 import pages.Header.CategoriesSection.SubCategory1.SubCategory1Page;
 import pages.Header.CategoriesSection.SubCategory2.SubCategory2Page;
+import pages.Header.CategoriesSection.SubCategory3.SubCategory3Page;
 
 import javax.swing.*;
 
@@ -16,6 +17,7 @@ public class CategoriesPage extends BasePage {
     WebDriver driver;
     public SubCategory1Page subCategory1Page;
     public SubCategory2Page subCategory2Page;
+    public SubCategory3Page subCategory3Page;
 
     public CategoriesPage(WebDriver driver) {
         super(driver);
@@ -23,6 +25,7 @@ public class CategoriesPage extends BasePage {
         PageFactory.initElements(driver, this);
         subCategory1Page = new SubCategory1Page(driver);
         subCategory2Page = new SubCategory2Page(driver);
+        subCategory3Page = new SubCategory3Page(driver);
     }
 
     // Main category menu
