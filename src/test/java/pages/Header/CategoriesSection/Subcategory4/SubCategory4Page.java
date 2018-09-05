@@ -16,19 +16,19 @@ public class SubCategory4Page extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    // Dom i ogrod subcategory
+    // Supermarket subcategory
 
-    //TODO
 
-    @FindBy(css = "a[title=\"Odzież, Obuwie, Dodatki\"]")
-    private WebElement domiOgrodPodkategoriaBudownictwoiAkcesoria;
 
-    public WebElement getdomiOgrodPodkategoriaBudownictwoiAkcesoria() {
-        return domiOgrodPodkategoriaBudownictwoiAkcesoria;
+    @FindBy(css = "a[title=\"Karma dla psa\"]")
+    private WebElement supermarketPodkategoriaKarmaDlaPsa;
+
+    public WebElement getsupermarketPodkategoriaKarmaDlaPsa() {
+        return supermarketPodkategoriaKarmaDlaPsa;
     }
 
-    public SubCategory4Page domiOgrodPodkategoriaBudownictwoiAkcesoriaClick() {
-        domiOgrodPodkategoriaBudownictwoiAkcesoria.click();
+    public SubCategory4Page supermarketPodkategoriaKarmaDlaPsaClick() {
+        supermarketPodkategoriaKarmaDlaPsa.click();
         return this;
     }
 
