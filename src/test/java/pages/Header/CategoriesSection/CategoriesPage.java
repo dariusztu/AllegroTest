@@ -8,17 +8,17 @@ import org.openqa.selenium.support.PageFactory;
 import pages.BasePage;
 import pages.Header.CategoriesSection.SubCategory1.SubCategory1Page;
 import pages.Header.CategoriesSection.SubCategory2.SubCategory2Page;
-import pages.Header.CategoriesSection.SubCategory3.SubCategory3Page;
-import pages.Header.CategoriesSection.SubCategory4.SubCategory4Page;
-import pages.Header.CategoriesSection.SubCategory5.SubCategory5Page;
-import pages.Header.CategoriesSection.SubCategory6.SubCategory6Page;
-import pages.Header.CategoriesSection.SubCategory7.SubCategory7Page;
-import pages.Header.CategoriesSection.SubCategory8.SubCategory8Page;
-import pages.Header.CategoriesSection.SubCategory9.SubCategory9Page;
-import pages.Header.CategoriesSection.SubCategory10.SubCategory10Page;
-import pages.Header.CategoriesSection.SubCategory11.SubCategory11Page;
-import pages.Header.CategoriesSection.SubCategory12.SubCategory12Page;
-import pages.Header.CategoriesSection.SubCategory13.SubCategory13Page;
+import pages.Header.CategoriesSection.Subcategory3.SubCategory3Page;
+import pages.Header.CategoriesSection.Subcategory4.SubCategory4Page;
+import pages.Header.CategoriesSection.Subcategory5.SubCategory5Page;
+import pages.Header.CategoriesSection.Subcategory6.SubCategory6Page;
+import pages.Header.CategoriesSection.Subcategory7.SubCategory7Page;
+import pages.Header.CategoriesSection.Subcategory8.SubCategory8Page;
+import pages.Header.CategoriesSection.Subcategory9.SubCategory9Page;
+import pages.Header.CategoriesSection.Subcategory10.SubCategory10Page;
+import pages.Header.CategoriesSection.Subcategory11.SubCategory11Page;
+import pages.Header.CategoriesSection.Subcategory12.SubCategory12Page;
+import pages.Header.CategoriesSection.Subcategory13.SubCategory13Page;
 
 
 import javax.swing.*;
