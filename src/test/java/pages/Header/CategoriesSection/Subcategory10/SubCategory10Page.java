@@ -19,8 +19,7 @@ public class SubCategory10Page extends BasePage {
     // Motoryzacja subcategory
 
 
-
-    @FindBy(css = "Części samochodowe\"]")
+    @FindBy(css = "a[title=\"Części samochodowe\"]")
     private WebElement motoryzacjaPodkategoriaCzesciSamochodowe;
 
     public WebElement getmotoryzacjaPodkategoriaCzesciSamochodowe() {
