@@ -9,6 +9,17 @@ import pages.BasePage;
 import pages.Header.CategoriesSection.SubCategory1.SubCategory1Page;
 import pages.Header.CategoriesSection.SubCategory2.SubCategory2Page;
 import pages.Header.CategoriesSection.SubCategory3.SubCategory3Page;
+import pages.Header.CategoriesSection.SubCategory4.SubCategory4Page;
+import pages.Header.CategoriesSection.SubCategory5.SubCategory5Page;
+import pages.Header.CategoriesSection.SubCategory6.SubCategory6Page;
+import pages.Header.CategoriesSection.SubCategory7.SubCategory7Page;
+import pages.Header.CategoriesSection.SubCategory8.SubCategory8Page;
+import pages.Header.CategoriesSection.SubCategory9.SubCategory9Page;
+import pages.Header.CategoriesSection.SubCategory10.SubCategory10Page;
+import pages.Header.CategoriesSection.SubCategory11.SubCategory11Page;
+import pages.Header.CategoriesSection.SubCategory12.SubCategory12Page;
+import pages.Header.CategoriesSection.SubCategory13.SubCategory13Page;
+
 
 import javax.swing.*;
 
@@ -18,6 +29,16 @@ public class CategoriesPage extends BasePage {
     public SubCategory1Page subCategory1Page;
     public SubCategory2Page subCategory2Page;
     public SubCategory3Page subCategory3Page;
+    public SubCategory4Page subCategory4Page;
+    public SubCategory5Page subCategory5Page;
+    public SubCategory6Page subCategory6Page;
+    public SubCategory7Page subCategory7Page;
+    public SubCategory8Page subCategory8Page;
+    public SubCategory9Page subCategory9Page;
+    public SubCategory10Page subCategory10Page;
+    public SubCategory11Page subCategory11Page;
+    public SubCategory12Page subCategory12Page;
+    public SubCategory13Page subCategory13Page;
 
     public CategoriesPage(WebDriver driver) {
         super(driver);
@@ -26,6 +47,16 @@ public class CategoriesPage extends BasePage {
         subCategory1Page = new SubCategory1Page(driver);
         subCategory2Page = new SubCategory2Page(driver);
         subCategory3Page = new SubCategory3Page(driver);
+        subCategory4Page = new SubCategory4Page(driver);
+        subCategory5Page = new SubCategory5Page(driver);
+        subCategory6Page = new SubCategory6Page(driver);
+        subCategory7Page = new SubCategory7Page(driver);
+        subCategory8Page = new SubCategory8Page(driver);
+        subCategory9Page = new SubCategory9Page(driver);
+        subCategory10Page = new SubCategory10Page(driver);
+        subCategory11Page = new SubCategory11Page(driver);
+        subCategory12Page = new SubCategory12Page(driver);
+        subCategory13Page = new SubCategory13Page(driver);
     }
 
     // Main category menu
