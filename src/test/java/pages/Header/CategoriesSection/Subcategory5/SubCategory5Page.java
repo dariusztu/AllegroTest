@@ -167,77 +167,96 @@ public class SubCategory5Page extends BasePage {
 
     public SubCategory5Page dzieckoPodkategoriaArtykulySzkolneClick() {
          dzieckoPodkategoriaArtykulySzkolne.click();
+     return this;
     }
 
     public SubCategory5Page dzieckoPodkategoriaFotelikiSamochodoweClick() {
          dzieckoPodkategoriaFotelikiSamochodowe.click();
+     return this;
     }
 
     public SubCategory5Page dzieckoPodkategoriaKarmienieDzieckaClick() {
          dzieckoPodkategoriaKarmienieDziecka.click();
+     return this;
     }
 
     public SubCategory5Page dzieckoPodkategoriaObuwieClick() {
          dzieckoPodkategoriaObuwie.click();
+     return this;
     }
 
     public SubCategory5Page dzieckoPodkategoriaOdziezClick() {
          dzieckoPodkategoriaOdziez.click();
+     return this;
     }
 
     public SubCategory5Page dzieckoPodkategoriaPokojDzieciecyClick() {
          dzieckoPodkategoriaPokojDzieciecy.click();
+     return this;
     }
 
     public SubCategory5Page dzieckoPodkategoriaRoweryiPojazdyClick() {
          dzieckoPodkategoriaRoweryiPojazdy.click();
+     return this;
     }
 
     public SubCategory5Page dzieckoPodkategoriaWozkiClick() {
          dzieckoPodkategoriaWozki.click();
+     return this;
     }
 
     public SubCategory5Page dzieckoPodkategoriaZabawkiClick() {
          dzieckoPodkategoriaZabawki.click();
+     return this;
     }
 
     public SubCategory5Page dzieckoPodkategoriaZabawkiOgrodoweClick() {
          dzieckoPodkategoriaZabawkiOgrodowe.click();
+     return this;
     }
 
     public SubCategory5Page dzieckoPodkategoriaZdrowieiHigienaClick() {
          dzieckoPodkategoriaZdrowieiHigiena.click();
+     return this;
     }
 
     public SubCategory5Page dzieckoPodkategoriaZabawkiEdukacyjneClick() {
          dzieckoPodkategoriaZabawkiEdukacyjne.click();
+     return this;
     }
 
     public SubCategory5Page dzieckoPodkategoriaKlockiClick() {
          dzieckoPodkategoriaKlocki.click();
+     return this;
     }
 
     public SubCategory5Page dzieckoPodkategoriaLalkiiAkcesoriaClick() {
          dzieckoPodkategoriaLalkiiAkcesoria.click();
+     return this;
     }
 
     public SubCategory5Page dzieckoPodkategoriaGryDlaDzieciClick() {
          dzieckoPodkategoriaGryDlaDzieci.click();
+     return this;
     }
 
     public SubCategory5Page dzieckoPodkategoriaKosmetykiDlaDzieciClick() {
          dzieckoPodkategoriaKosmetykiDlaDzieci.click();
+     return this;
     }
 
     public SubCategory5Page dzieckoPodkategoriaMebleDlaDzieciClick() {
          dzieckoPodkategoriaMebleDlaDzieci.click();
+     return this;
     }
 
     public SubCategory5Page dzieckoPodkategoriaHulajnogiClick() {
          dzieckoPodkategoriaHulajnogi.click();
+     return this;
     }
 
     public SubCategory5Page dzieckoPodkategoriaGniotkiSquishyClick() {
          dzieckoPodkategoriaGniotkiSquishy.click();
+     return this;
     }
 }
