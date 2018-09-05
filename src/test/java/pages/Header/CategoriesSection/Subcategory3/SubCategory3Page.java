@@ -1,4 +1,4 @@
-package pages.Header.CategoriesSection.SubCategory3;
+package pages.Header.CategoriesSection.Subcategory3;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,7 +17,6 @@ public class SubCategory3Page extends BasePage {
     }
 
     // Dom i ogrod subcategory
-
 
 
     @FindBy(css = "a[title=\"Odzież, Obuwie, Dodatki\"]")
@@ -47,7 +46,6 @@ public class SubCategory3Page extends BasePage {
     @FindBy(css = "a[title=\"Wyposażenie\"]")
     private WebElement domiOgrodPodkategoriaWyposazenie;
 
-    
 
     @FindBy(css = "a[title=\"Lampy\"]")
     private WebElement domiOgrodPodkategoriaLampy;
@@ -82,76 +80,9 @@ public class SubCategory3Page extends BasePage {
     @FindBy(css = "a[title=\"Garnki i patelnie\"]")
     private WebElement domiOgrodPodkategoriaGarnkiiPatelnie;
 
-    public SubCategory3Page domiOgrodPodkategoriaHydraulikaiArmaturaClick() {
-        return this;
-    }
+    public WebElement getdomiOgrodPodkategoriaBudownictwoiAkcesoria() {
 
-    public SubCategory3Page domiOgrodPodkategoriaMebleClick() {
-        return this;
-    }
-
-    public SubCategory3Page domiOgrodPodkategoriaNieruchomosciClick() {
-        return this;
-    }
-
-    public SubCategory3Page domiOgrodPodkategoriaNarzedziaClick() {
-        return this;
-    }
-
-    public SubCategory3Page domiOgrodPodkategoriaMyjkiCisnienioweClick() {
-        return this;
-    }
-
-    public SubCategory3Page domiOgrodPodkategoriaOgrodClick() {
-        return this;
-    }
-
-    public SubCategory3Page domiOgrodPodkategoriaMebleOgrodoweClick() {
-        return this;
-    }
-
-    public SubCategory3Page domiOgrodPodkategoriaWyposazenieClick() {
-        return this;
-    }
-
-    public SubCategory3Page domiOgrodPodkategoriaLampyClick() {
-        return this;
-    }
-
-    public SubCategory3Page domiOgrodPodkategoriaDrabinyClick() {
-        return this;
-    }
-
-    public SubCategory3Page domiOgrodPodkategoriaBaterieLazienkoweClick() {
-        return this;
-    }
-
-    public SubCategory3Page domiOgrodPodkategoriaMebleKuchenneClick() {
-        return this;
-    }
-
-    public SubCategory3Page domiOgrodPodkategoriaSypialniaClick() {
-        return this;
-    }
-
-    public SubCategory3Page domiOgrodPodkategoriaSzlifierkiiPolerkiClick() {
-        return this;
-    }
-
-    public SubCategory3Page domiOgrodPodkategoriaPilyiPilarkiClick() {
-        return this;
-    }
-
-    public SubCategory3Page domiOgrodPodkategoriaKosiarkiSpalinoweClick() {
-        return this;
-    }
-
-    public SubCategory3Page domiOgrodPodkategoriaRoslinyClick() {
-        return this;
-    }
-
-    public SubCategory3Page domiOgrodPodkategoriaRoletyClick() {
-        return this;
+        return domiOgrodPodkategoriaBudownictwoiAkcesoria;
     }
 
     public SubCategory3Page domiOgrodPodkategoriaGarnkiiPatelnieClick() {
@@ -235,12 +166,98 @@ public class SubCategory3Page extends BasePage {
     }
 
 
-    public WebElement getdomiOgrodPodkategoriaBudownictwoiAkcesoria() {
-        return domiOgrodPodkategoriaBudownictwoiAkcesoria;
-    }
-
     public SubCategory3Page domiOgrodPodkategoriaBudownictwoiAkcesoriaClick() {
         domiOgrodPodkategoriaBudownictwoiAkcesoria.click();
+        return this;
+    }
+
+    public SubCategory3Page domiOgrodPodkategoriaHydraulikaiArmaturaClick() {
+        domiOgrodPodkategoriaHydraulikaiArmatura.click();
+        return this;
+    }
+
+    public SubCategory3Page domiOgrodPodkategoriaMebleClick() {
+        domiOgrodPodkategoriaMeble.click();
+        return this;
+    }
+
+    public SubCategory3Page domiOgrodPodkategoriaNieruchomosciClick() {
+        domiOgrodPodkategoriaNieruchomosci.click();
+        return this;
+    }
+
+    public SubCategory3Page domiOgrodPodkategoriaNarzedziaClick() {
+        domiOgrodPodkategoriaNarzedzia.click();
+        return this;
+    }
+
+    public SubCategory3Page domiOgrodPodkategoriaMyjkiCisnienioweClick() {
+        domiOgrodPodkategoriaMyjkiCisnieniowe.click();
+        return this;
+    }
+
+    public SubCategory3Page domiOgrodPodkategoriaOgrodClick() {
+        domiOgrodPodkategoriaOgrod.click();
+        return this;
+    }
+
+    public SubCategory3Page domiOgrodPodkategoriaMebleOgrodoweClick() {
+        domiOgrodPodkategoriaMebleOgrodowe.click();
+        return this;
+    }
+
+    public SubCategory3Page domiOgrodPodkategoriaWyposazenieClick() {
+        domiOgrodPodkategoriaWyposazenie.click();
+        return this;
+    }
+
+    public SubCategory3Page domiOgrodPodkategoriaLampyClick() {
+        domiOgrodPodkategoriaLampy.click();
+        return this;
+    }
+
+    public SubCategory3Page domiOgrodPodkategoriaDrabinyClick() {
+        domiOgrodPodkategoriaDrabiny.click();
+        return this;
+    }
+
+    public SubCategory3Page domiOgrodPodkategoriaBaterieLazienkoweClick() {
+        domiOgrodPodkategoriaBaterieLazienkowe.click();
+        return this;
+    }
+
+    public SubCategory3Page domiOgrodPodkategoriaMebleKuchenneClick() {
+        domiOgrodPodkategoriaMebleKuchenne.click();
+        return this;
+    }
+
+    public SubCategory3Page domiOgrodPodkategoriaSypialniaClick() {
+        domiOgrodPodkategoriaSypialnia.click();
+        return this;
+    }
+
+    public SubCategory3Page domiOgrodPodkategoriaSzlifierkiiPolerkiClick() {
+        domiOgrodPodkategoriaSzlifierkiiPolerki.click();
+        return this;
+    }
+
+    public SubCategory3Page domiOgrodPodkategoriaPilyiPilarkiClick() {
+        domiOgrodPodkategoriaPilyiPilarki.click();
+        return this;
+    }
+
+    public SubCategory3Page domiOgrodPodkategoriaKosiarkiSpalinoweClick() {
+        domiOgrodPodkategoriaKosiarkiSpalinowe.click();
+        return this;
+    }
+
+    public SubCategory3Page domiOgrodPodkategoriaRoslinyClick() {
+        domiOgrodPodkategoriaRosliny.click();
+        return this;
+    }
+
+    public SubCategory3Page domiOgrodPodkategoriaRoletyClick() {
+        domiOgrodPodkategoriaRolety.click();
         return this;
     }
 

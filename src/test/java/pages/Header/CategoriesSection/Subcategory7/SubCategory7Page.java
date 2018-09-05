@@ -1,4 +1,4 @@
-package pages.Header.CategoriesSection.SubCategory7;
+package pages.Header.CategoriesSection.Subcategory7;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
