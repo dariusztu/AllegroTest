@@ -261,9 +261,5 @@ public class SubCategory4Page extends BasePage {
     }
 
 
-    public SubCategory4Page supermarketPodkategoriaKarmaDlaPsaClick() {
-        supermarketPodkategoriaKarmaDlaPsa.click();
-        return this;
-    }
 
 }
