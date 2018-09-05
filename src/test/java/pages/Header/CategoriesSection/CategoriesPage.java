@@ -159,8 +159,6 @@ public class CategoriesPage extends BasePage {
     private WebElement kategoriaFirma;
 
 
-
-
     public CategoriesPage wszystkiekategorieClick() {
         wszystkiekategorie.click();
         return this;
@@ -178,4 +176,68 @@ public class CategoriesPage extends BasePage {
         return this;
     }
 
+    public CategoriesPage kategoriaElektronikaClick() {
+        kategoriaElektronika.click();
+        return this;
+    }
+
+    public CategoriesPage kategoriaModaClick() {
+        kategoriaModa.click();
+        return this;
+    }
+
+    public CategoriesPage kategoriadomiOgrodClick() {
+        kategoriadomiOgrod.click();
+        return this;
+    }
+
+    public CategoriesPage kategoriaSupermarketClick() {
+        kategoriaSupermarket.click();
+        return this;
+    }
+
+    public CategoriesPage kategoriaDzieckoClick() {
+        kategoriaDziecko.click();
+        return this;
+    }
+
+    public CategoriesPage kategoriaUrodaClick() {
+        kategoriaUroda.click();
+        return this;
+    }
+
+    public CategoriesPage kategoriaZdrowieClick() {
+        kategoriaZdrowie.click();
+        return this;
+    }
+
+    public CategoriesPage kategoriaKulturaiRozrywkaClick() {
+        kategoriaKulturaiRozrywka.click();
+        return this;
+    }
+
+    public CategoriesPage kategoriaSportiTurystykaClick() {
+        kategoriaSportiTurystyka.click();
+        return this;
+    }
+
+    public CategoriesPage kategoriaMotoryzacjaClick() {
+        kategoriaMotoryzacja.click();
+        return this;
+    }
+
+    public CategoriesPage kategoriaOgloszeniaiUslugiClick() {
+        kategoriaOgloszeniaiUslugi.click();
+        return this;
+    }
+
+    public CategoriesPage kategoriaKolekcjeiSztukaClick() {
+        kategoriaKolekcjeiSztuka.click();
+        return this;
+    }
+
+    public CategoriesPage kategoriaFirmaClick() {
+        kategoriaFirma.click();
+        return this;
+    }
 }
