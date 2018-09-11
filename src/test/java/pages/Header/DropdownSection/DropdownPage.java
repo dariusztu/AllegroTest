@@ -1,9 +1,12 @@
 package pages.Header.DropdownSection;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.BasePage;
 
 public class DropdownPage extends BasePage {
@@ -61,6 +64,10 @@ public class DropdownPage extends BasePage {
     @FindBy(css = ".opbox-metrum-header__account-login > a:nth-child(2)")
     private WebElement mojeAllegroDropdownZalogujButton;
 
+    @FindBy(css = "a[href=\"/logout.php\"]")
+    private WebElement mojeAllegroDropdownWylogujButton;
+
+
     @FindBy(css = ".opbox-metrum-header__account-login > a:nth-child(3)")
     private WebElement mojeAllegroDropdownZalozKontoButton;
 
@@ -73,6 +80,12 @@ public class DropdownPage extends BasePage {
     public DropdownPage mojeAllegroDropdownClick() {
         mojeAllegroDropdown.click();
         return this;
+    }
+
+    public DropdownPage waitForAccoutNameVisiblity() {
+    WebDriverWait wait = new WebDriverWait(driver,5);
+        wait.until(ExpectedConditions.textToBePresentInElement(mojeAllegroDropdown, "dervu"));
+    return this;
     }
 
     public DropdownPage mojeAllegroDropdownWystawPrzedmiotClick() {
@@ -145,6 +158,12 @@ public class DropdownPage extends BasePage {
         return this;
     }
 
+    public DropdownPage mojeAllegroDropdownWylogujButtonClick() {
+        mojeAllegroDropdownWylogujButton.click();
+        return this;
+    }
+
+
     public DropdownPage mojeAllegroDropdownZalozKontoButtonClick() {
         mojeAllegroDropdownZalozKontoButton.click();
         return this;
@@ -158,6 +177,21 @@ public class DropdownPage extends BasePage {
     public DropdownPage mojeAllegroDropdownSmartGraphicsClick() {
         mojeAllegroDropdownSmartGraphics.click();
         return this;
+    }
+
+    public boolean mojeAllegroDropdownCheckIfUserNameIsVisible(){
+        String userName = mojeAllegroDropdown.getText();
+        if (userName.contains("Moje Allegro")) {
+            return true;
+        }
+        else {
+            return false;
+        }
+
+    }
+
+    public WebElement getMojeAllegroDropdown() {
+        return mojeAllegroDropdown;
     }
 
 
