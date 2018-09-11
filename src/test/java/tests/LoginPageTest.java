@@ -42,9 +42,9 @@ public class LoginPageTest {
         landingPageObject.mojeAllegroButtonClicK();
         landingPageObject.mojeAllegroToLoginButtonClick();
         loginPageObject.loginOrEmailInputFormClick();
-        loginPageObject.loginOrEmailFormEnterLogin();
+        loginPageObject.loginOrEmailFormEnterLogin("ALLEGRO_LOGIN");
         loginPageObject.passwordInputFormClick();
-        loginPageObject.passwordFormEnterPassword();
+        loginPageObject.passwordFormEnterPassword("ALLEGRO_PASSWD");
         loginPageObject.loginButtonClick();
 
     }
