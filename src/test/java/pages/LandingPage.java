@@ -51,23 +51,23 @@ public class LandingPage    extends BasePage {
         return this;
     }
 
-    public void rodoButtonAcceptClick() {
+    public LandingPage rodoButtonAcceptClick() {
         rodoButtonAccept.click();
     }
 
-    public void rodoButtonDenyClick() {
+    public LandingPage rodoButtonDenyClick() {
         rodoButtonDeny.click();
     }
 
-    public void mojeAllegroButtonClicK() {
+    public LandingPage mojeAllegroButtonClicK() {
         mojeAllegroButton.click();
     }
 
-    public void mojeAllegroToLoginButtonClick() {
+    public LandingPage mojeAllegroToLoginButtonClick() {
         mojeAllegroToLoginButton.click();
     }
 
-    public void mojeAllegroToLogoutButtonClick() {
+    public LandingPage mojeAllegroToLogoutButtonClick() {
         mojeAllegroToLogoutButton.click();
     }
 
