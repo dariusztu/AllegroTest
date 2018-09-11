@@ -34,7 +34,7 @@ public class LoginPage extends BasePage{
     @FindBy(xpath = "//span[text()= \"Zaloguj się\"]")
     private WebElement loginButton;
 
-    public void loginOrEmailInputFormClick() {
+    public LoginPage loginOrEmailInputFormClick() {
         loginOrEmailInputForm.click();
     }
 
