@@ -17,9 +17,6 @@ public class LoginPage extends BasePage{
 
     WebDriver driver;
     private static String url = "";
-    private String myLoginOrEmail = System.getenv("ALLEGRO_LOGIN");
-    private String myPasswd = System.getenv("ALLEGRO_PASSWD");
-
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -69,21 +66,19 @@ public class LoginPage extends BasePage{
 
     }
 
-    public void loginOrEmailFormEnterLogin() {
-
-        String checkLogin = checkEnv(myLoginOrEmail);
-        if (!(checkLogin.isEmpty())) {
-            loginOrEmailInputForm.sendKeys(myLoginOrEmail);
+    public void loginOrEmailFormEnterLogin(String login) {
+        String checkLogin = checkEnv(login);
+        if ((checkLogin.length() > 0)) {
+            loginOrEmailInputForm.sendKeys(checkLogin);
         } else {
             System.out.println("Login variable incorrect, please check environmental variable");
         }
     }
 
-    public void passwordFormEnterPassword() {
-
-        String checkPasswd = checkEnv(myPasswd);
-        if (!(checkPasswd.isEmpty())) {
-            passwordInputForm.sendKeys(myPasswd);
+    public void passwordFormEnterPassword(String password) {
+        String checkPasswd = checkEnv(password);
+        if ((checkPasswd.length() > 0)) {
+            passwordInputForm.sendKeys(checkPasswd);
         } else {
             System.out.println("Password variable incorrect, please check environmental variable");
         }
