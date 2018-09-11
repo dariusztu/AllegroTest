@@ -38,11 +38,11 @@ public class LoginPage extends BasePage{
         loginOrEmailInputForm.click();
     }
 
-    public void passwordInputFormClick() {
+    public LoginPage passwordInputFormClick() {
         passwordInputForm.click();
     }
 
-    public void loginButtonClick() {
+    public LoginPage loginButtonClick() {
         loginButton.click();
     }
 
@@ -66,7 +66,7 @@ public class LoginPage extends BasePage{
 
     }
 
-    public void loginOrEmailFormEnterLogin(String login) {
+    public LoginPage loginOrEmailFormEnterLogin(String login) {
         String checkLogin = checkEnv(login);
         if ((checkLogin.length() > 0)) {
             loginOrEmailInputForm.sendKeys(checkLogin);
@@ -75,7 +75,7 @@ public class LoginPage extends BasePage{
         }
     }
 
-    public void passwordFormEnterPassword(String password) {
+    public LoginPage passwordFormEnterPassword(String password) {
         String checkPasswd = checkEnv(password);
         if ((checkPasswd.length() > 0)) {
             passwordInputForm.sendKeys(checkPasswd);
