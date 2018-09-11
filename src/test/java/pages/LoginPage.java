@@ -36,14 +36,17 @@ public class LoginPage extends BasePage{
 
     public LoginPage loginOrEmailInputFormClick() {
         loginOrEmailInputForm.click();
+        return this;
     }
 
     public LoginPage passwordInputFormClick() {
         passwordInputForm.click();
+        return this;
     }
 
     public LoginPage loginButtonClick() {
         loginButton.click();
+        return this;
     }
 
 
@@ -73,6 +76,7 @@ public class LoginPage extends BasePage{
         } else {
             System.out.println("Login variable incorrect, please check environmental variable");
         }
+        return this;
     }
 
     public LoginPage passwordFormEnterPassword(String password) {
@@ -82,5 +86,6 @@ public class LoginPage extends BasePage{
         } else {
             System.out.println("Password variable incorrect, please check environmental variable");
         }
+        return this;
     }
 }
