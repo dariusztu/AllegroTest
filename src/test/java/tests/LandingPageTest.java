@@ -29,6 +29,16 @@ public class LandingPageTest extends BaseTest {
                 goTopage().
                 rodoButtonAcceptClick();
         assertThat(landingPageObject.checkIfVisible()).isFalse();
+
+    }
+
+    @Test
+    public void passIfRODODenyDoesntGoToNextPage() {
+        landingPageObject = new LandingPage(driver);
+        landingPageObject.
+                goTopage().
+                rodoButtonDenyClick();
+        assertThat(landingPageObject.checkIfVisible()).isFalse();
     }
 
 
