@@ -59,7 +59,7 @@ public class LandingPage    extends BasePage {
         rodoButtonDeny.click();
     }
 
-    public LandingPage mojeAllegroButtonClicK() {
+    public LandingPage mojeAllegroButtonClick() {
         mojeAllegroButton.click();
     }
 
