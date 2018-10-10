@@ -82,10 +82,11 @@ public class DropdownPage extends BasePage {
         return this;
     }
 
-    public DropdownPage waitForAccoutNameVisiblity() {
+    public boolean waitForAccoutNameVisiblity() {
     WebDriverWait wait = new WebDriverWait(driver,5);
-        wait.until(ExpectedConditions.textToBePresentInElement(mojeAllegroDropdown, "dervu"));
-    return this;
+        wait.until(ExpectedConditions.textToBePresentInElement(mojeAllegroDropdown, "client"));
+        if (mojeAllegroDropdown.getText().contains("client")) {return true;}
+    return false;
     }
 
     public DropdownPage mojeAllegroDropdownWystawPrzedmiotClick() {

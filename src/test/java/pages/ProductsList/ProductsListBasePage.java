@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class ProductsListBasePage  extends BasePage {
 
     WebDriver driver;
-    private static String url = "https://allegro.pl/";
+    private static String url = "https://allegro.pl.allegrosandbox.pl/";
 
     public ProductsListBasePage(WebDriver driver) {
         super(driver);
