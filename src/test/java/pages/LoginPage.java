@@ -11,6 +11,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 import java.util.Map;
 
 public class LoginPage extends BasePage{
@@ -50,42 +53,36 @@ public class LoginPage extends BasePage{
     }
 
 
-    public String checkEnv(String env1) {
-
-            try {
-                String env = System.getenv(env1);
-
-                if (env == null) {
-
-                    throw new AssertionError("Environmental variable not set properly, please check.");
-                }
-                    return env;
-
-            } catch (SecurityException e) {
-                throw new AssertionError("Security policy doesn't allow access to system environment", e);
-            }
 
 
 
-    }
+        public static String[] readFileAsString() throws Exception
+        {//TODO
+            String[] loginAndPasswd = new String[2];
 
-    public LoginPage loginOrEmailFormEnterLogin(String login) {
-        String checkLogin = checkEnv(login);
-        if ((checkLogin.length() > 0)) {
-            loginOrEmailInputForm.sendKeys(checkLogin);
-        } else {
-            System.out.println("Login variable incorrect, please check environmental variable");
+            File file = new File(System.getProperty("user.home").toString() + "/allegropasswd.txt");
+            Scanner sc = new Scanner(file);
+            sc.useDelimiter("\\n");
+            loginAndPasswd[0] = sc.next().toString();
+            loginAndPasswd[1] = sc.next().toString();
+            return loginAndPasswd;
         }
+
+
+
+
+
+
+
+    public LoginPage loginOrEmailFormEnterLogin() throws Exception {
+        String[] login1 = readFileAsString();
+        loginOrEmailInputForm.sendKeys(login1[0]);
         return this;
     }
 
-    public LoginPage passwordFormEnterPassword(String password) {
-        String checkPasswd = checkEnv(password);
-        if ((checkPasswd.length() > 0)) {
-            passwordInputForm.sendKeys(checkPasswd);
-        } else {
-            System.out.println("Password variable incorrect, please check environmental variable");
-        }
+    public LoginPage passwordFormEnterPassword() throws Exception {
+        String[] passwd = readFileAsString();
+        passwordInputForm.sendKeys(passwd[1]);
         return this;
     }
 }
